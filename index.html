@@ -6,39 +6,73 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Your Swift Channel</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Google Fonts Example -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Swift Hub</strong></li>
+      </ul>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="tutorials.html">Tutorials</a></li>
         <li><a href="projects.html">Projects & Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-    <h1>Welcome to Your Swift Learning Hub!</h1>
-    <p>Code Swift, Dream Big! Explore SwiftUI, UIKit, and Swift fundamentals with easy-to-follow tutorials and hands-on projects.</p>
+    <div class="header-content">
+      <h1>Dream Big, Code Bigger</h1>
+      <p>Welcome to your Swift learning hub. Explore SwiftUI, UIKit, and Swift fundamentals through tutorials and projects.</p>
+    </div>
   </header>
 
-  <section id="latest-tutorials">
-    <h2>Latest Tutorials</h2>
-    <ul>
-      <li><a href="tutorials.html#swiftui-basics">SwiftUI Basics</a></li>
-      <li><a href="tutorials.html#uikit-todo">UIKit: To-Do List App</a></li>
-      <li><a href="tutorials.html#swift-fundamentals">Swift Fundamentals: Variables and Functions</a></li>
-    </ul>
+  <main class="container">
+    <section id="latest-tutorials">
+      <hgroup>
+        <h2>Latest Tutorials</h2>
+        <h3>New and trending content</h3>
+      </hgroup>
+      <ul class="resource-list">
+        <li><a href="tutorials.html#swiftui-basics">SwiftUI Basics</a></li>
+        <li><a href="tutorials.html#uikit-todo">UIKit: To-Do List App</a></li>
+        <li><a href="tutorials.html#swift-fundamentals">Swift Fundamentals: Variables and Functions</a></li>
+      </ul>
+    </section>
+
+    <section id="featured-projects">
+      <hgroup>
+        <h2>Featured Projects</h2>
+        <h3>Hands-on learning with real projects</h3>
+      </hgroup>
+      <ul class="resource-list">
+        <li><a href="projects.html#weather-app">SwiftUI Weather App</a></li>
+        <li><a href="projects.html#uikit-gallery">UIKit Image Gallery</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <section aria-label="Subscribe">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay Updated</h2>
+          <h3>Subscribe to get the latest Swift tutorials</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your First Name" aria-label="First Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </article>
+    </div>
   </section>
 
-  <section id="featured-projects">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li><a href="projects.html#weather-app">SwiftUI Weather App</a></li>
-      <li><a href="projects.html#uikit-gallery">UIKit Image Gallery</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>Stay Swifty! Connect with us on <a href="">YouTube</a> and <a href="#">GitHub</a>.</p>
+  <footer class="container">
+    <small>
+      <a href="https://github.com/yourprofile">GitHub</a> • <a href="https://youtube.com/yourchannel">YouTube</a>
+    </small>
   </footer>
 </body>
 </html>
