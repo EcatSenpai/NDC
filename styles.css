@@ -71,47 +71,34 @@ hgroup h3 {
   margin-bottom: 20px;
 }
 
-ul.resource-list {
-  list-style-type: none;
-  padding: 0;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
-ul.resource-list li {
-  margin-bottom: 15px;
+section {
   padding: 20px;
+  border-radius: 10px;
   background-color: #ECECEC;
-  border-radius: 8px;
-  font-weight: 500;
 }
 
-ul.resource-list li a {
+section figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+section figure figcaption a {
+  display: inline-block;
+  margin-top: 10px;
   color: #7353BA;
+  font-weight: bold;
   text-decoration: none;
 }
 
-ul.resource-list li a:hover {
+section figure figcaption a:hover {
   color: #fa7343;
-}
-
-/* Subscribe Section */
-form input {
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-form button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #29ABE2;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #7353BA;
 }
 
 /* Footer */
@@ -122,11 +109,6 @@ footer {
   color: white;
 }
 
-footer a {
+footer small {
   color: #fa7343;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
