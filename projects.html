@@ -9,44 +9,82 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Swift Hub</strong></li>
+      </ul>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="tutorials.html">Tutorials</a></li>
         <li><a href="projects.html">Projects & Resources</a></li>
       </ul>
     </nav>
-    <h1>Projects & Resources</h1>
+    <div class="header-content">
+      <h1>Projects & Resources</h1>
+    </div>
   </header>
 
-  <section id="project-list">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li id="weather-app">
-        <h3>SwiftUI Weather App</h3>
-        <p>Build a weather app using SwiftUI and API integration.</p>
-        <a href="#">View Project</a> | <a href="assets/playgrounds/weather-app.playground.zip">Download Playground</a>
-      </li>
-      <li id="uikit-gallery">
-        <h3>UIKit Image Gallery</h3>
-        <p>Create an image gallery using UICollectionView in UIKit.</p>
-        <a href="#">View Project</a> | <a href="assets/playgrounds/uikit-gallery.playground.zip">Download Playground</a>
-      </li>
-    </ul>
-  </section>
+  <main class="container">
+    <section id="project-list">
+      <h2>Explore Swift Projects</h2>
+      <div class="grid">
+        <!-- SwiftUI Section -->
+        <section>
+          <hgroup>
+            <h2>SwiftUI</h2>
+            <h3>Build modern user interfaces with declarative syntax.</h3>
+          </hgroup>
+          <p>Master SwiftUI with our hands-on projects. Learn to build a weather app, a task manager, and more.</p>
+          <figure>
+            <img src="assets/images/swiftui.jpg" alt="SwiftUI Example" />
+            <figcaption><a href="swiftui-projects.html" target="_blank">Explore SwiftUI Projects</a></figcaption>
+          </figure>
+        </section>
 
-  <section id="resources">
-    <h2>Additional Resources</h2>
-    <p>Check out official documentation, helpful articles, and recommended books:</p>
-    <ul>
-      <li><a href="https://developer.apple.com/documentation/swiftui/">SwiftUI Documentation</a></li>
-      <li><a href="https://developer.apple.com/documentation/uikit/">UIKit Documentation</a></li>
-      <li><a href="#">Recommended Swift Books</a></li>
-    </ul>
-  </section>
+        <!-- Playgrounds & Swift Fundamentals Section -->
+        <section>
+          <hgroup>
+            <h2>Playgrounds & Swift Fundamentals</h2>
+            <h3>Hands-on learning with Swift Playgrounds.</h3>
+          </hgroup>
+          <p>Practice Swift fundamentals such as variables, loops, and functions. Download interactive Swift Playgrounds to experiment with code.</p>
+          <figure>
+            <img src="assets/images/playgrounds.jpg" alt="Swift Playgrounds Example" />
+            <figcaption><a href="playgrounds.html" target="_blank">Explore Playgrounds</a></figcaption>
+          </figure>
+        </section>
 
-  <footer>
-    <p>Thanks for checking out the projects! Stay tuned for more updates.</p>
+        <!-- UIKit Section -->
+        <section>
+          <hgroup>
+            <h2>UIKit</h2>
+            <h3>Build classic iOS apps with UIKit.</h3>
+          </hgroup>
+          <p>Explore UIKit projects, from building a custom image gallery to creating complex table views and animations.</p>
+          <figure>
+            <img src="assets/images/uikit.jpg" alt="UIKit Example" />
+            <figcaption><a href="uikit-projects.html" target="_blank">Explore UIKit Projects</a></figcaption>
+          </figure>
+        </section>
+
+        <!-- Extras Section -->
+        <section>
+          <hgroup>
+            <h2>Extras</h2>
+            <h3>Additional learning resources and tools.</h3>
+          </hgroup>
+          <p>Check out advanced resources, books, and tutorials for deep diving into Swift development.</p>
+          <figure>
+            <img src="assets/images/extras.jpg" alt="Extras Example" />
+            <figcaption><a href="extras.html" target="_blank">Explore Extras</a></figcaption>
+          </figure>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Thanks for exploring! Stay tuned for more projects.</small>
   </footer>
 </body>
 </html>
