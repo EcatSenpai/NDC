@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Swift Playgrounds & Fundamentals</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Swift Hub</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="projects.html">Projects & Resources</a></li>
+        <li><a href="playgrounds.html">Playgrounds</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Swift Playgrounds & Fundamentals</h1>
+      <p>Learn Swift programming concepts with hands-on lessons and downloadable resources.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="lessons">
+      <h2>Explore Swift Fundamentals</h2>
+      <div class="accordion">
+
+        <!-- Lesson 1: Swift Playgrounds for Learning -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Swift Playgrounds for Learning <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Learn how to use Swift Playgrounds to practice and improve your Swift programming skills.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/playgrounds/swift-playgrounds-basics.zip">Download Swift Playgrounds Basics</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 2: Introduction to Swift -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Introduction to Swift <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Learn the basics of Swift: variables, constants, and data types. Write your first Swift program.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/playgrounds/introduction-to-swift.zip">Download Introduction to Swift</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/swift/" target="_blank">Swift Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- More lessons can be added similarly... -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Thanks for learning with us! More lessons coming soon.</small>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    $(document).ready(function(){
+      $(".accordion-header").click(function(){
+        $(this).next(".accordion-content").slideToggle(200);
+        $(this).find(".arrow").toggleClass("open");
+      });
+    });
+  </script>
+</body>
+</html>
