@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SwiftUI Video Roadmap</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Swift Hub</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="projects.html">Projects & Resources</a></li>
+        <li><a href="swiftui-roadmap.html">SwiftUI Roadmap</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>SwiftUI Video Roadmap</h1>
+      <p>From beginner to advanced SwiftUI concepts, follow along with downloadable resources and videos.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="lessons">
+      <h2>Explore SwiftUI Concepts</h2>
+      <div class="accordion">
+
+        <!-- Lesson 1: Introduction to SwiftUI -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Introduction to SwiftUI <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Setting up a SwiftUI project in Xcode. Understanding Views, Modifiers, and Stacks.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/swiftui-introduction.zip">Download Introduction to SwiftUI Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/swiftui/" target="_blank">SwiftUI Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 2: Working with State in SwiftUI -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Working with State in SwiftUI <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Understanding `@State`, `@Binding`, and `@ObservedObject`. Build a counter app to demonstrate state management.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/swiftui-state-management.zip">Download State Management Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/swiftui/state/" target="_blank">SwiftUI State Management</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- More lessons can be added similarly... -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Thanks for learning with us! More lessons coming soon.</small>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    $(document).ready(function(){
+      $(".accordion-header").click(function(){
+        $(this).next(".accordion-content").slideToggle(200);
+        $(this).find(".arrow").toggleClass("open");
+      });
+    });
+  </script>
+</body>
+</html>
