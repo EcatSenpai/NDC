@@ -76,59 +76,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Main Topics Section */
-#main-content {
-  margin-top: 40px;
-}
-
-.topic-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* Gradient for Cards */
-.topic {
-  background: linear-gradient(135deg, #29ABE2, #7353BA); /* Gradient background */
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 20px;
-  flex: 1 1 calc(25% - 20px); /* Allow flexible sizing */
-  max-width: calc(25% - 20px);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.topic a {
-  text-decoration: none;
-  color: white; /* Ensure text is readable over the gradient */
-}
-
-.topic img {
-  max-width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain image aspect ratio */
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.topic h3 {
-  color: white; /* Text color inside the gradient */
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.topic p {
-  font-size: 1rem;
-  color: #ECECEC;
-  margin-bottom: 10px;
-}
-
-.topic:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Resource Cards Section */
 .resource-cards {
   display: flex;
@@ -138,9 +85,10 @@ h2 {
 
 /* Individual Card Styles */
 .card {
-  background: linear-gradient(135deg, #29ABE2, #7353BA); /* Gradient background */
+  background: white; /* Use white background to match home page */
+  border: 1px solid #FA7343; /* Add border to match home page */
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 20px;
   flex: 1 1 calc(25% - 20px); /* Allow flexible sizing for four cards */
@@ -160,14 +108,14 @@ h2 {
 }
 
 .card h3 {
-  color: white; /* Text color inside the gradient */
+  color: #FA7343; /* Text color to match home page */
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .card p {
   font-size: 1rem;
-  color: #ECECEC;
+  color: #333; /* Dark text for readability */
   margin-bottom: 10px;
 }
 
@@ -192,7 +140,7 @@ h2 {
 
 .accordion-header {
   cursor: pointer;
-  background-color: #29ABE2;
+  background-color: #FA7343; /* Match header color */
   color: white;
   padding: 15px;
   border-radius: 5px;
@@ -212,6 +160,8 @@ h2 {
 
 .accordion-content iframe {
   margin-bottom: 20px;
+  max-width: 100%; /* Responsive iframe */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .accordion-content .resources,
@@ -251,15 +201,6 @@ img {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .topic-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .topic {
-    max-width: 90%;
-  }
-
   .resource-cards {
     flex-direction: column;
     align-items: center; /* Center cards in column */
