@@ -7,45 +7,38 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5; /* Light background for a clean look */
+  background-color: #f5f5f5;
   color: #333;
   line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-  background-color: #f9f9f9; /* Light header for a clean appearance */
-  color: #333;
+  background-color: #fa7343;
+  color: white;
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: center; /* Center nav items */
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 nav ul li {
-  margin-right: 30px; /* More space for a sleek feel */
-}
-
-nav ul li:last-child {
-  margin-right: 0; /* No margin on last item */
+  margin-right: 20px;
 }
 
 nav ul li a {
-  color: #fa7343; /* Brand color */
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s; /* Smooth transition for hover */
 }
 
 nav ul li a:hover {
-  color: #333; /* Darker color on hover */
+  text-decoration: underline;
 }
 
 .header-content {
@@ -59,16 +52,12 @@ nav ul li a:hover {
 
 .header-content p {
   font-size: 1.2rem;
-  max-width: 600px; /* Limit width for readability */
-  margin: 0 auto; /* Center paragraph */
 }
 
 /* Main Section */
 main {
   padding: 40px 20px;
-  background-color: #fff; /* White background for main content */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #fff;
 }
 
 h2 {
@@ -77,68 +66,137 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Flexbox for Resource Lists */
+/* Latest Tutorials and Featured Projects */
 .resource-list {
-  display: flex; /* Use flexbox */
-  justify-content: flex-start; /* Align items to start */
-  flex-wrap: wrap; /* Wrap items to the next line if necessary */
-  list-style: none; /* Remove default list style */
+  list-style-type: none;
   padding: 0;
 }
 
 .resource-list li {
-  margin-right: 30px; /* Space between items */
-  margin-bottom: 15px; /* Space below items */
+  margin: 10px 0;
 }
 
-.resource-list li a {
-  color: #7353BA; /* Custom link color */
+/* Main Topics Section */
+#main-content {
+  margin-top: 40px; /* Space above the section */
+}
+
+.topic-list {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out topics */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.topic {
+  background-color: #ffffff; /* White background for each topic */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px; /* Space between topics */
+  padding: 20px; /* Padding inside topic cards */
+  flex: 1; /* Allow flex grow */
+  max-width: calc(25% - 20px); /* Limit width */
+  text-align: center; /* Center the text */
+}
+
+.topic img {
+  max-width: 100%; /* Make image responsive */
+  border-radius: 5px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space below images */
+}
+
+.topic h3 {
+  color: #fa7343; /* Topic title color */
+  font-size: 1.5rem; /* Font size for titles */
+  margin-bottom: 10px; /* Space below titles */
+}
+
+.topic p {
+  font-size: 1rem; /* Font size for descriptions */
+  color: #555; /* Darker text for descriptions */
+}
+
+/* Accordion Styling */
+.accordion {
+  margin: 20px 0;
+}
+
+.accordion-item {
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background-color: #ECECEC;
+  padding: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-header .arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header .arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.resources,
+.links {
+  margin-top: 20px;
+}
+
+.resources a,
+.links ul li a {
+  color: #7353BA;
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid transparent; /* Underline effect */
-  transition: border-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.resource-list li a:hover {
-  border-color: #fa7343; /* Underline color on hover */
+.resources a:hover,
+.links ul li a:hover {
+  color: #fa7343;
 }
 
 /* Subscribe Section */
 section[aria-label="Subscribe"] {
   background-color: #f9f9f9; /* Light background for contrast */
-  padding: 40px 20px;
-  margin-top: 20px; /* Space above */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 40px 20px; /* Padding for the section */
+  margin-top: 40px; /* Space above the section */
 }
 
-form.grid {
-  display: flex;
-  flex-direction: column; /* Stack inputs vertically */
-  max-width: 400px; /* Limit width */
-  margin: 0 auto; /* Center form */
+.grid {
+  display: grid; /* Grid layout for the form */
+  grid-template-columns: 1fr 1fr auto; /* Two inputs and a button */
+  gap: 10px; /* Space between items */
 }
 
-form.grid input {
-  margin-bottom: 15px; /* Space between inputs */
-  padding: 10px;
+input[type="text"],
+input[type="email"] {
+  padding: 10px; /* Padding for inputs */
   border: 1px solid #ccc; /* Light border */
   border-radius: 5px; /* Rounded corners */
-  font-size: 1rem;
 }
 
-form.grid button {
-  padding: 10px;
+button {
+  padding: 10px 20px; /* Padding for the button */
   background-color: #fa7343; /* Button color */
-  color: white;
-  border: none; /* Remove border */
+  color: white; /* Button text color */
+  border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
-  cursor: pointer;
-  transition: background-color 0.3s; /* Smooth transition for hover */
+  cursor: pointer; /* Pointer on hover */
 }
 
-form.grid button:hover {
-  background-color: #333; /* Darker background on hover */
+button:hover {
+  background-color: #e05e3c; /* Darker shade on hover */
 }
 
 /* Footer */
