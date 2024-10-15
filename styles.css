@@ -7,14 +7,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         /* General body and container settings */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #FFFFFF; /* Cool White backdrop */
-            color: #333; /* Dark text color for readability */
-        }
+   body {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #333; /* Dark text color for readability */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Ensure headings use Roboto */
+    font-weight: 700; /* Bold headings */
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto for text and links */
+    font-weight: 400; /* Regular weight */
+    color: #333;
+}
+
+/* Example for buttons */
+button, .btn {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto for buttons */
+    font-weight: 500; /* Medium weight */
+}
 
         .container {
             width: 90%;
