@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Projects & Resources - Your Swift Channel</title>
+  <title>Your Swift Channel</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -20,71 +21,56 @@
       </ul>
     </nav>
     <div class="header-content">
-      <h1>Projects & Resources</h1>
+      <h1>Dream Big, Code Bigger</h1>
+      <p>Welcome to your Swift learning hub. Explore SwiftUI, UIKit, and Swift fundamentals through tutorials and projects.</p>
     </div>
   </header>
 
   <main class="container">
-    <section id="project-list">
-      <h2>Explore Swift Projects</h2>
-      <div class="grid">
-        <!-- SwiftUI Section -->
-        <section>
-          <hgroup>
-            <h2>SwiftUI</h2>
-            <h3>Build modern user interfaces with declarative syntax.</h3>
-          </hgroup>
-          <p>Master SwiftUI with our hands-on projects. Learn to build a weather app, a task manager, and more.</p>
-          <figure>
-            <img src="assets/images/swiftui.jpg" alt="SwiftUI Example" />
-            <figcaption><a href="SwiftUI.html" target="_blank">Explore SwiftUI Projects</a></figcaption>
-          </figure>
-        </section>
+    <section id="latest-tutorials">
+      <hgroup>
+        <h2>Latest Tutorials</h2>
+        <h3>New and trending content</h3>
+      </hgroup>
+      <ul class="resource-list">
+        <li><a href="tutorials.html#swiftui-basics">SwiftUI Basics</a></li>
+        <li><a href="tutorials.html#uikit-todo">UIKit: To-Do List App</a></li>
+        <li><a href="tutorials.html#swift-fundamentals">Swift Fundamentals: Variables and Functions</a></li>
+      </ul>
+    </section>
 
-        <!-- Playgrounds & Swift Fundamentals Section -->
-        <section>
-          <hgroup>
-            <h2>Playgrounds & Swift Fundamentals</h2>
-            <h3>Hands-on learning with Swift Playgrounds.</h3>
-          </hgroup>
-          <p>Practice Swift fundamentals such as variables, loops, and functions. Download interactive Swift Playgrounds to experiment with code.</p>
-          <figure>
-            <img src="assets/images/playgrounds.jpg" alt="Swift Playgrounds Example" />
-            <figcaption><a href="Swift Playgrounds & Fundamentals.html" target="_blank">Explore Playgrounds</a></figcaption>
-          </figure>
-        </section>
-
-        <!-- UIKit Section -->
-        <section>
-          <hgroup>
-            <h2>UIKit</h2>
-            <h3>Build classic iOS apps with UIKit.</h3>
-          </hgroup>
-          <p>Explore UIKit projects, from building a custom image gallery to creating complex table views and animations.</p>
-          <figure>
-            <img src="assets/images/uikit.png" alt="UIKit Example" />
-            <figcaption><a href="UIkit.html" target="_blank">Explore UIKit Projects</a></figcaption>
-          </figure>
-        </section>
-
-        <!-- Extras Section -->
-        <section>
-          <hgroup>
-            <h2>Extras</h2>
-            <h3>Additional learning resources and tools.</h3>
-          </hgroup>
-          <p>Check out advanced resources, books, and tutorials for deep diving into Swift development.</p>
-          <figure>
-            <img src="assets/images/extras.jpg" alt="Extras Example" />
-            <figcaption><a href="extras.html" target="_blank">Explore Extras</a></figcaption>
-          </figure>
-        </section>
-      </div>
+    <section id="featured-projects">
+      <hgroup>
+        <h2>Featured Projects</h2>
+        <h3>Hands-on learning with real projects</h3>
+      </hgroup>
+      <ul class="resource-list">
+        <li><a href="projects.html#weather-app">SwiftUI Weather App</a></li>
+        <li><a href="projects.html#uikit-gallery">UIKit Image Gallery</a></li>
+      </ul>
     </section>
   </main>
 
+  <section aria-label="Subscribe">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay Updated</h2>
+          <h3>Subscribe to get the latest Swift tutorials</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your First Name" aria-label="First Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
   <footer class="container">
-    <small>Thanks for exploring! Stay tuned for more projects.</small>
+    <small>
+      <a href="https://github.com/yourprofile">GitHub</a> • <a href="https://youtube.com/yourchannel">YouTube</a>
+    </small>
   </footer>
 </body>
 </html>
