@@ -64,6 +64,70 @@ nav ul li a:hover {
   color: #ECECEC;
 }
 
+/* Main Section */
+main {
+  padding: 40px 20px;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  color: #FA7343;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Main Topics Section */
+#main-content {
+  margin-top: 40px;
+}
+
+.topic-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.topic {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px); /* Allow flexible sizing */
+  max-width: calc(25% - 20px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.topic h3 {
+  color: #29ABE2;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.topic p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.topic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Links Section */
 #resources {
   padding: 40px 20px;
@@ -176,14 +240,24 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
+  text-align: center;
   padding: 20px;
   background-color: #333;
-  text-align: center;
   color: white;
 }
 
-/* Image Sizing Fix for Home Page */
-img {
-  max-width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain image aspect ratio */
+footer small {
+  color: #FA7343;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .topic-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topic {
+    max-width: 90%;
+  }
 }
