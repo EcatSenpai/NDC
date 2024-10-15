@@ -13,32 +13,39 @@ body {
 }
 
 /* Header Styling */
+
 header {
-  background-color: #fa7343;
+  background: linear-gradient(to right, #fa7343, #ff6b4d);
   color: white;
   padding: 20px 0;
   text-align: center;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #fff3e0; /* Lighten the color on hover */
 }
 
 .header-content {
@@ -53,6 +60,7 @@ nav ul li a:hover {
 .header-content p {
   font-size: 1.2rem;
 }
+
 
 /* Main Section */
 main {
