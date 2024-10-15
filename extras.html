@@ -5,8 +5,219 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Extras (Bonus Content)</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <!-- jQuery for Accordion functionality -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+      /* General body and container settings */
+      body {
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          background-color: #FFFFFF;
+          color: #333;
+      }
+
+      .container {
+          width: 90%;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      .container-fluid {
+          width: 100%;
+          padding: 10px 20px;
+          background-color: #FFFFFF;
+          border-bottom: 1px solid #ECECEC;
+      }
+
+      /* Navigation */
+      nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .nav-left {
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: #FA7343;
+      }
+
+      .nav-right ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 15px;
+      }
+
+      .nav-right ul li {
+          display: inline;
+      }
+
+      .nav-right ul li a {
+          text-decoration: none;
+          font-weight: 500;
+          color: #333;
+          transition: color 0.3s ease;
+      }
+
+      .nav-right ul li a:hover {
+          color: #29ABE2;
+      }
+
+      /* Header */
+      header {
+          background-color: #FA7343;
+          color: white;
+          padding: 50px 0;
+          text-align: center;
+      }
+
+      header h1 {
+          font-size: 2.5rem;
+          margin-bottom: 15px;
+      }
+
+      header p {
+          font-size: 1.2rem;
+          max-width: 600px;
+          margin: 0 auto;
+      }
+
+      /* Cards Section */
+      .resource-cards {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          margin: 20px 0;
+      }
+
+      .card {
+          text-align: center;
+          border-radius: 10px;
+          padding: 15px;
+          max-width: 250px;
+          background-color: #FFFFFF;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card img {
+          width: 100%;
+          height: auto;
+          max-width: 200px;
+          max-height: 150px;
+          object-fit: contain;
+          display: block;
+          margin: 0 auto;
+      }
+
+      .card h3 {
+          margin: 15px 0 10px 0;
+          font-size: 1.2rem;
+          color: #FA7343;
+      }
+
+      .card p {
+          color: #666;
+          font-size: 0.9rem;
+      }
+
+      .card .btn {
+          display: inline-block;
+          padding: 8px 12px;
+          margin-top: 10px;
+          text-decoration: none;
+          background-color: #29ABE2;
+          color: white;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+
+      .card .btn:hover {
+          background-color: #7353BA;
+      }
+
+      /* Hover effect for resource cards */
+      .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Accordion */
+      .accordion-item {
+          margin-bottom: 20px;
+      }
+
+      .accordion-header {
+          background-color: #FA7343;
+          color: white;
+          padding: 15px;
+          font-size: 1.2rem;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .accordion-header .arrow {
+          transition: transform 0.2s ease-in-out;
+      }
+
+      .accordion-header .arrow.open {
+          transform: rotate(180deg);
+      }
+
+      .accordion-content {
+          padding: 15px;
+          background-color: #FFFFFF;
+          border-left: 3px solid #FA7343;
+          display: none;
+      }
+
+      /* Footer */
+      footer {
+          background-color: #FA7343;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          font-size: 0.9rem;
+      }
+
+      footer a {
+          color: white;
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+
+      /* Responsive adjustment */
+      @media (max-width: 768px) {
+          .resource-cards {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          .card {
+              width: 100%;
+              max-width: 300px;
+          }
+
+          .card img {
+              max-width: 100%;
+              max-height: 150px;
+          }
+      }
+  </style>
 </head>
 <body>
 <header>
@@ -61,10 +272,10 @@
                 <p>Interactive way to learn Swift coding through fun challenges.</p>
                 <a href="https://www.apple.com/swift/playgrounds/" target="_blank" class="btn">Download Playgrounds</a>
             </div>
-             <div class="card">
+            <div class="card">
                 <img src="assets/images/documentation.png" alt="Swift Documentation" />
-                <h3>Swift Documentation</h3> <!-- Corrected title -->
-                <p>Check out the official Swift documentation.</p> <!-- Clarified description -->
+                <h3>Swift Documentation</h3>
+                <p>Check out the official Swift documentation.</p>
                 <a href="https://www.swift.org/documentation/" target="_blank" class="btn">Explore Documentation</a>
             </div>
         </div>
