@@ -104,11 +104,11 @@ h2 {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure images are properly contained */
+/* Image Sizing Fix */
 .card img {
-  max-width: 80%; /* Slight padding around the image */
+  max-width: 100%; /* Ensure images are responsive */
   height: auto; /* Maintain aspect ratio */
-  max-height: 180px; /* Limit height to fit within the card */
+  max-height: 150px; /* Limit height to fit within the card */
   object-fit: contain; /* Maintain image proportions without cropping */
   border-radius: 8px;
   margin-bottom: 20px;
