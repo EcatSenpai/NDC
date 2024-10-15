@@ -1,105 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Your Swift Channel</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav class="container-fluid">
-      <ul>
-        <li><strong>Your Swift Hub</strong></li>
-      </ul>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tutorials.html">Tutorials</a></li>
-        <li><a href="projects.html">Projects & Resources</a></li>
-      </ul>
-    </nav>
-    <div class="header-content">
-      <h1>Dream Big, Code Bigger</h1>
-      <p>Welcome to your Swift learning hub. Explore SwiftUI, UIKit, and Swift fundamentals through tutorials and projects.</p>
-    </div>
-  </header>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main class="container">
-    <section id="latest-tutorials">
-      <hgroup>
-        <h2>Latest Tutorials</h2>
-        <h3>New and trending content</h3>
-      </hgroup>
-      <ul class="resource-list">
-        <li><a href="tutorials.html#swiftui-basics">SwiftUI Basics</a></li>
-        <li><a href="tutorials.html#uikit-todo">UIKit: To-Do List App</a></li>
-        <li><a href="tutorials.html#swift-fundamentals">Swift Fundamentals: Variables and Functions</a></li>
-      </ul>
-    </section>
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
 
-    <section id="featured-projects">
-      <hgroup>
-        <h2>Featured Projects</h2>
-        <h3>Hands-on learning with real projects</h3>
-      </hgroup>
-      <ul class="resource-list">
-        <li><a href="projects.html#weather-app">SwiftUI Weather App</a></li>
-        <li><a href="projects.html#uikit-gallery">UIKit Image Gallery</a></li>
-      </ul>
-    </section>
+/* Header Styling */
+header {
+  background-color: #fa7343;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
-    <section id="main-content">
-      <hgroup>
-        <h2>Main Topics</h2>
-        <h3>Explore various Swift topics</h3>
-      </hgroup>
-      <div class="topic-list">
-        <div class="topic">
-          <img src="path/to/swift-fundamentals.png" alt="Swift Fundamentals" />
-          <h3>Swift Fundamentals & Playgrounds</h3>
-          <p>Master the basics of Swift programming and learn how to use Playgrounds for interactive coding.</p>
-        </div>
-        <div class="topic">
-          <img src="path/to/uikit.png" alt="UIKit" />
-          <h3>UIKit</h3>
-          <p>Build powerful iOS applications using UIKit, Apple's framework for designing user interfaces.</p>
-        </div>
-        <div class="topic">
-          <img src="path/to/swiftui.png" alt="SwiftUI" />
-          <h3>SwiftUI</h3>
-          <p>Discover SwiftUI, Apple's innovative framework for creating beautiful and interactive UIs.</p>
-        </div>
-        <div class="topic">
-          <img src="path/to/extras.png" alt="Extras" />
-          <h3>Extras</h3>
-          <p>Explore additional resources, tips, and tricks to enhance your Swift learning journey.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-  <section aria-label="Subscribe">
-    <div class="container">
-      <article>
-        <hgroup>
-          <h2>Stay Updated</h2>
-          <h3>Subscribe to get the latest Swift tutorials</h3>
-        </hgroup>
-        <form class="grid">
-          <input type="text" id="firstname" name="firstname" placeholder="Your First Name" aria-label="First Name" required />
-          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </article>
-    </div>
-  </section>
+nav ul li {
+  margin-right: 20px;
+}
 
-  <footer class="container">
-    <small>
-      <a href="https://github.com/yourprofile">GitHub</a> • <a href="https://youtube.com/yourchannel">YouTube</a>
-    </small>
-  </footer>
-</body>
-</html>
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.header-content {
+  padding: 20px 0;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+}
+
+/* Main Section */
+main {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+h2 {
+  color: #fa7343;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Main Topics Section */
+#main-content {
+  margin-top: 40px; /* Space above the section */
+}
+
+.topic-list {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out topics */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.topic {
+  background-color: #ffffff; /* White background for each topic */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px; /* Space between topics */
+  padding: 20px; /* Padding inside topic cards */
+  flex: 1; /* Allow flex grow */
+  max-width: calc(25% - 20px); /* Limit width */
+  text-align: center; /* Center the text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+.topic a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from the parent */
+}
+
+.topic img {
+  max-width: 100%; /* Make image responsive */
+  border-radius: 5px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space below images */
+}
+
+.topic h3 {
+  color: #fa7343; /* Topic title color */
+  font-size: 1.5rem; /* Font size for titles */
+  margin-bottom: 10px; /* Space below titles */
+}
+
+.topic p {
+  font-size: 1rem; /* Font size for descriptions */
+  color: #555; /* Darker text for descriptions */
+}
+
+/* Hover Effect */
+.topic:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Subscribe Section */
+section[aria-label="Subscribe"] {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px 20px; /* Padding for the section */
+  margin-top: 40px; /* Space above the section */
+}
+
+.grid {
+  display: grid; /* Grid layout for the form */
+  grid-template-columns: 1fr 1fr auto; /* Two inputs and a button */
+  gap: 10px; /* Space between items */
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+button {
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #fa7343; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+button:hover {
+  background-color: #e05e3c; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer small {
+  color: #fa7343;
+}
