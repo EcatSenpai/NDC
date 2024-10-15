@@ -50,55 +50,67 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+.header-content p {
+  font-size: 1.2rem;
+}
+
 /* Main Section */
 main {
   padding: 40px 20px;
   background-color: #fff;
 }
 
-hgroup h2 a {
+h2 {
   color: #fa7343;
   font-size: 2rem;
-  text-decoration: none;
-}
-
-hgroup h2 a:hover {
-  color: #29ABE2;
-}
-
-hgroup h3 {
-  color: #29ABE2;
-  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+/* Accordion Styling */
+.accordion {
+  margin: 20px 0;
 }
 
-section {
-  padding: 20px;
+.accordion-item {
+  border: 1px solid #ECECEC;
   border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
   background-color: #ECECEC;
+  padding: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
-section figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.accordion-header .arrow {
+  transition: transform 0.3s ease;
 }
 
-section figure figcaption a {
-  display: inline-block;
-  margin-top: 10px;
+.accordion-header .arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.resources, .links {
+  margin-top: 20px;
+}
+
+.resources a, .links ul li a {
   color: #7353BA;
   font-weight: bold;
   text-decoration: none;
 }
 
-section figure figcaption a:hover {
+.resources a:hover, .links ul li a:hover {
   color: #fa7343;
 }
 
