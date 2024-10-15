@@ -94,19 +94,20 @@ h2 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 20px;
-  flex: 1 1 calc(25% - 20px); /* Allow flexible sizing for four cards */
-  max-width: calc(25% - 20px); /* Ensure maximum width is 25% */
+  flex: 1 1 calc(25% - 20px); /* Allow flexible sizing */
+  max-width: calc(25% - 20px);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Set a minimum height for uniformity */
-  min-height: 300px; /* Adjust as needed */
+}
+
+.topic a {
+  text-decoration: none;
+  color: white; /* Ensure text is readable over the gradient */
 }
 
 .topic img {
-  max-width: 100%;      /* Ensure images are responsive */
-  height: auto;         /* Maintain image aspect ratio */
-  max-height: 150px;    /* Set a maximum height for images */
-  object-fit: cover;    /* Ensure the image covers the container */
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain image aspect ratio */
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -123,6 +124,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+.topic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* Resource Cards Section */
 .resource-cards {
@@ -180,32 +185,50 @@ h2 {
   background: #FF6B4D; /* Button hover color */
 }
 
-
-.topic:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Accordion */
+.accordion {
+  margin: 40px 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .topic {
-    flex: 1 1 calc(33.33% - 20px); /* Three cards in row on medium screens */
-    max-width: calc(33.33% - 20px);
-  }
+.accordion-header {
+  cursor: pointer;
+  background-color: #29ABE2;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .topic {
-    flex: 1 1 calc(50% - 20px); /* Two cards in row on small screens */
-    max-width: calc(50% - 20px);
-  }
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
 
-@media (max-width: 480px) {
-  .topic {
-    flex: 1 1 100%; /* One card in row on very small screens */
-    max-width: 100%;
-  }
+.accordion-content p {
+  margin-bottom: 20px;
+}
+
+.accordion-content iframe {
+  margin-bottom: 20px;
+}
+
+.accordion-content .resources,
+.accordion-content .links {
+  margin-bottom: 20px;
+}
+
+.accordion-content .links ul {
+  padding-left: 20px;
+}
+
+.accordion-header .arrow {
+  float: right;
+}
+
+.accordion-header .open {
+  transform: rotate(180deg);
 }
 
 /* Footer */
@@ -224,4 +247,25 @@ footer small {
 img {
   max-width: 100%; /* Ensure images are responsive */
   height: auto; /* Maintain image aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .topic-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topic {
+    max-width: 90%;
+  }
+
+  .resource-cards {
+    flex-direction: column;
+    align-items: center; /* Center cards in column */
+  }
+
+  .card {
+    max-width: 90%; /* Allow cards to be wider on small screens */
+  }
 }
