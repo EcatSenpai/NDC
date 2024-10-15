@@ -103,11 +103,12 @@ h2 {
 
 /* Image Sizing Fix */
 .topic img {
-  max-width: 100%; /* Ensure images are responsive */
-  max-height: 120px; /* Limit height to prevent oversized images */
-  object-fit: contain; /* Maintain aspect ratio without distortion */
-  margin-bottom: 15px;
+  width: 100%; /* Ensures image uses the available card width */
+  height: auto; /* Keeps the aspect ratio */
+  object-fit: cover; /* Ensures the image fills the container neatly */
+  max-height: 200px; /* Caps the height to prevent it from becoming too tall */
 }
+
 
 /* Text Styling */
 .topic h3 {
