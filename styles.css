@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #FFFFFF; /* Cool White backdrop */
+    color: #333; /* Dark text color for readability */
 }
 
 .container {
@@ -15,7 +17,8 @@ body {
 .container-fluid {
     width: 100%;
     padding: 10px 20px;
-    background-color: #f8f9fa;
+    background-color: #FFFFFF; /* Clean white navigation bar */
+    border-bottom: 1px solid #ECECEC; /* Soft Gray border for subtle separation */
 }
 
 /* Navigation */
@@ -28,6 +31,7 @@ nav {
 .nav-left {
     font-weight: bold;
     font-size: 1.5rem;
+    color: #FA7343; /* Swift Orange for brand recognition */
 }
 
 .nav-right ul {
@@ -45,16 +49,17 @@ nav {
 .nav-right ul li a {
     text-decoration: none;
     font-weight: 500;
-    color: #333;
+    color: #333; /* Dark text */
+    transition: color 0.3s ease;
 }
 
 .nav-right ul li a:hover {
-    color: #0071e3;
+    color: #29ABE2; /* Teal/Blue on hover for links */
 }
 
 /* Header */
 header {
-    background-color: #0071e3;
+    background-color: #FA7343; /* Swift Orange for header background */
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -67,6 +72,8 @@ header {
 
 .header-content p {
     font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Main Topics Section */
@@ -74,6 +81,7 @@ main h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 2rem;
+    color: #FA7343; /* Swift Orange for headings */
 }
 
 .topic-list {
@@ -87,24 +95,36 @@ main h2 {
 .topic {
     text-align: center;
     width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .topic img {
     width: 100%;
     height: auto;
     max-width: 250px;
-    max-height: 150px; /* Set max-height for better control */
-    object-fit: contain; /* This will scale images proportionally */
+    max-height: 150px;
+    object-fit: contain;
 }
 
 .topic h3 {
     font-size: 1.3rem;
     margin-top: 10px;
+    color: #FA7343; /* Swift Orange for topic titles */
 }
 
 .topic p {
     font-size: 1rem;
-    color: #666;
+    color: #666; /* Soft Gray for descriptions */
+}
+
+/* Hover effect for topics */
+.topic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Resource Cards Section */
@@ -118,19 +138,20 @@ main h2 {
 
 .card {
     text-align: center;
-    border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
     max-width: 250px;
-    background-color: #f8f9fa;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Control the max width */
-    max-height: 150px; /* Set max height */
-    object-fit: contain; /* Ensures the image scales without cropping */
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
     display: block;
     margin: 0 auto;
 }
@@ -138,6 +159,7 @@ main h2 {
 .card h3 {
     margin: 15px 0 10px 0;
     font-size: 1.2rem;
+    color: #FA7343; /* Swift Orange for titles */
 }
 
 .card p {
@@ -145,18 +167,25 @@ main h2 {
     font-size: 0.9rem;
 }
 
+/* Hover effect for resource cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
 .card .btn {
     display: inline-block;
     padding: 8px 12px;
     margin-top: 10px;
     text-decoration: none;
-    background-color: #0071e3;
+    background-color: #29ABE2; /* Teal/Blue for buttons */
     color: white;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .card .btn:hover {
-    background-color: #005bb5;
+    background-color: #7353BA; /* Purple on hover for call-to-action buttons */
 }
 
 /* Accordion */
@@ -165,7 +194,7 @@ main h2 {
 }
 
 .accordion-header {
-    background-color: #0071e3;
+    background-color: #FA7343; /* Swift Orange for headers */
     color: white;
     padding: 15px;
     font-size: 1.2rem;
@@ -185,7 +214,8 @@ main h2 {
 
 .accordion-content {
     padding: 15px;
-    background-color: #f8f9fa;
+    background-color: #FFFFFF;
+    border-left: 3px solid #FA7343; /* Swift Orange border for accordion content */
     display: none;
 }
 
@@ -195,7 +225,7 @@ main h2 {
 
 /* Footer */
 footer {
-    background-color: #0071e3;
+    background-color: #FA7343; /* Swift Orange footer */
     color: white;
     padding: 20px;
     text-align: center;
@@ -225,6 +255,6 @@ footer a:hover {
 
     .card img, .topic img {
         max-width: 100%;
-        max-height: 150px; /* Ensures images scale down on smaller screens */
+        max-height: 150px;
     }
 }
