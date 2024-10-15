@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Professional Education Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* General body and container settings */
-   body {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    color: #333; /* Dark text color for readability */
-}
+        body {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #FFFFFF;
+            color: #333; /* Dark text color for readability */
+        }
 
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif; /* Ensure headings use Roboto */
-    font-weight: 700; /* Bold headings */
-}
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif; /* Ensure headings use Roboto */
+            font-weight: 700; /* Bold headings */
+        }
 
-p, a {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto for text and links */
-    font-weight: 400; /* Regular weight */
-    color: #333;
-}
+        p, a {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto for text and links */
+            font-weight: 400; /* Regular weight */
+            color: #333;
+        }
 
-/* Example for buttons */
-button, .btn {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto for buttons */
-    font-weight: 500; /* Medium weight */
-}
+        /* Example for buttons */
+        button, .btn {
+            font-family: 'Roboto', sans-serif; /* Apply Roboto for buttons */
+            font-weight: 500; /* Medium weight */
+            cursor: pointer;
+        }
 
         .container {
             width: 90%;
@@ -75,11 +77,12 @@ button, .btn {
             text-decoration: none;
             font-weight: 500;
             color: #333; /* Dark text */
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
         }
 
         nav ul li a:hover {
             color: #29ABE2; /* Teal/Blue on hover for links */
+            transform: scale(1.05); /* Slightly increase size on hover */
         }
 
         /* Header */
@@ -175,11 +178,12 @@ button, .btn {
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .subscribe-form button:hover {
             background-color: #7353BA; /* Purple on hover */
+            transform: scale(1.05); /* Slightly increase size on hover */
         }
 
         /* Footer */
@@ -189,15 +193,20 @@ button, .btn {
             padding: 20px;
             text-align: center;
             font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
         footer a {
             color: white;
             text-decoration: none;
+            transition: color 0.3s ease; /* Transition for footer links */
         }
 
         footer a:hover {
             text-decoration: underline;
+            color: #29ABE2; /* Change color on hover */
         }
 
         /* Responsive adjustment */
@@ -208,13 +217,22 @@ button, .btn {
             }
 
             .topic {
-                width: 100%;
+                width: 90%; /* Make it responsive on mobile */
                 max-width: 300px;
             }
 
             .topic img {
                 max-width: 100%;
                 max-height: 150px;
+            }
+
+            .subscribe-form input[type="text"],
+            .subscribe-form input[type="email"] {
+                margin-bottom: 10px; /* Add space below input fields */
+            }
+
+            .subscribe-form button {
+                width: 100%; /* Full width button on mobile */
             }
         }
     </style>
