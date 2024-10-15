@@ -93,8 +93,8 @@ main h2 {
     width: 100%;
     height: auto;
     max-width: 250px;
-    max-height: 200px;
-    object-fit: cover;
+    max-height: 150px; /* Set max-height for better control */
+    object-fit: contain; /* This will scale images proportionally */
 }
 
 .topic h3 {
@@ -128,9 +128,9 @@ main h2 {
 .card img {
     width: 100%;
     height: auto;
-    max-width: 300px;
-    max-height: 200px;
-    object-fit: cover;
+    max-width: 200px; /* Control the max width */
+    max-height: 150px; /* Set max height */
+    object-fit: contain; /* Ensures the image scales without cropping */
     display: block;
     margin: 0 auto;
 }
@@ -225,6 +225,6 @@ footer a:hover {
 
     .card img, .topic img {
         max-width: 100%;
-        max-height: 200px;
+        max-height: 150px; /* Ensures images scale down on smaller screens */
     }
 }
