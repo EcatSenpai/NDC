@@ -87,8 +87,9 @@ h2 {
   flex-wrap: wrap;
 }
 
+/* Gradient for Cards */
 .topic {
-  background-color: #FFFFFF;
+  background: linear-gradient(135deg, #29ABE2, #7353BA); /* Gradient background */
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -101,7 +102,7 @@ h2 {
 
 .topic a {
   text-decoration: none;
-  color: inherit;
+  color: white; /* Ensure text is readable over the gradient */
 }
 
 .topic img {
@@ -112,84 +113,20 @@ h2 {
 }
 
 .topic h3 {
-  color: #29ABE2;
+  color: white; /* Text color inside the gradient */
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .topic p {
   font-size: 1rem;
-  color: #555;
+  color: #ECECEC;
   margin-bottom: 10px;
 }
 
 .topic:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Links Section */
-#resources {
-  padding: 40px 20px;
-  background-color: #F9F9F9;
-}
-
-#resources h2 {
-  color: #FA7343;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.resource-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  padding: 20px;
-  max-width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card img {
-  max-width: 100px;
-  height: auto; /* Ensure images maintain aspect ratio */
-  margin-bottom: 20px;
-}
-
-.card h3 {
-  color: #29ABE2;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.card a.btn {
-  background-color: #29ABE2;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.card a.btn:hover {
-  background-color: #2B91C1;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Accordion */
@@ -240,14 +177,20 @@ h2 {
 
 /* Footer */
 footer {
-  text-align: center;
   padding: 20px;
   background-color: #333;
+  text-align: center;
   color: white;
 }
 
 footer small {
   color: #FA7343;
+}
+
+/* Image Sizing Fix for Home Page */
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain image aspect ratio */
 }
 
 /* Responsive adjustments */
