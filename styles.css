@@ -20,6 +20,35 @@ header {
   text-align: center;
 }
 
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff3e0;
+}
+
+/* Header Content */
 .header-content {
   padding: 20px 0;
 }
@@ -67,6 +96,7 @@ header {
 
 .card img {
   max-width: 100px;
+  height: auto; /* Ensure images maintain aspect ratio */
   margin-bottom: 20px;
 }
 
@@ -150,4 +180,10 @@ footer {
   background-color: #333;
   text-align: center;
   color: white;
+}
+
+/* Image Sizing Fix for Home Page */
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain image aspect ratio */
 }
