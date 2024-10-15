@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UIKit Video Roadmap</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Swift Hub</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="projects.html">Projects & Resources</a></li>
+        <li><a href="uikit-roadmap.html">UIKit Roadmap</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>UIKit Video Roadmap</h1>
+      <p>Master UIKit with step-by-step tutorials and downloadable resources.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="lessons">
+      <h2>Explore UIKit Concepts</h2>
+      <div class="accordion">
+
+        <!-- Lesson 1: Introduction to UIKit -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Introduction to UIKit <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Overview of the UIKit framework. Setting up a simple app with buttons and labels.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/uikit-introduction.zip">Download Introduction to UIKit Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/uikit/" target="_blank">UIKit Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 2: Working with View Controllers -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Working with View Controllers <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Understanding the UIViewController lifecycle and building a navigation-based app.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/uikit-view-controllers.zip">Download View Controllers Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/uikit/uiviewcontroller" target="_blank">UIViewController Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 3: Building Layouts with Auto Layout -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Building Layouts with Auto Layout <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Introduction to Auto Layout and constraints in Storyboard. Example: Create a responsive login screen.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/uikit-auto-layout.zip">Download Auto Layout Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/uikit/nslayoutconstraint/" target="_blank">Auto Layout Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- More lessons can be added similarly... -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Thanks for learning with us! More lessons coming soon.</small>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    $(document).ready(function(){
+      $(".accordion-header").click(function(){
+        $(this).next(".accordion-content").slideToggle(200);
+        $(this).find(".arrow").toggleClass("open");
+      });
+    });
+  </script>
+</body>
+</html>
