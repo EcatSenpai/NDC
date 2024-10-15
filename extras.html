@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Extras (Bonus Content)</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Your Swift Hub</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="projects.html">Projects & Resources</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Extras (Bonus Content)</h1>
+      <p>Advanced iOS development topics and bonus content to take your skills to the next level.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="lessons">
+      <h2>Explore Bonus Content</h2>
+      <div class="accordion">
+
+        <!-- Lesson 1: Debugging in Xcode -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Debugging in Xcode <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Learn how to use breakpoints and debugging tools in Xcode. Example: Fix common bugs in an existing app.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/debugging-in-xcode.zip">Download Debugging Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/xcode/debugging-tools" target="_blank">Xcode Debugging Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 2: Building an ARKit App -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Building an ARKit App <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Introduction to ARKit and basic AR app creation. Example: Build a simple AR drawing app.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/arkit-drawing-app.zip">Download ARKit Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/arkit" target="_blank">ARKit Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 3: Intro to Combine Framework -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">Intro to Combine Framework <span class="arrow">&#x25BC;</span></h3>
+          <div class="accordion-content">
+            <p>Overview of Combine and reactive programming. Example: Use Combine to handle data streams.</p>
+            <!-- YouTube Video Placeholder -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            <div class="resources">
+              <h4>Project Resource</h4>
+              <a href="assets/projects/combine-framework.zip">Download Combine Framework Project</a>
+            </div>
+            <div class="links">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="https://developer.apple.com/documentation/combine" target="_blank">Combine Documentation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- More lessons can be added similarly... -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Thanks for learning with us! More bonus content coming soon.</small>
+  </footer>
+
+  <script>
+    // Accordion functionality
+    $(document).ready(function(){
+      $(".accordion-header").click(function(){
+        $(this).next(".accordion-content").slideToggle(200);
+        $(this).find(".arrow").toggleClass("open");
+      });
+    });
+  </script>
+</body>
+</html>
