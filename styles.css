@@ -66,16 +66,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Latest Tutorials and Featured Projects */
-.resource-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.resource-list li {
-  margin: 10px 0;
-}
-
 /* Main Topics Section */
 #main-content {
   margin-top: 40px; /* Space above the section */
@@ -96,6 +86,12 @@ h2 {
   flex: 1; /* Allow flex grow */
   max-width: calc(25% - 20px); /* Limit width */
   text-align: center; /* Center the text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+.topic a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from the parent */
 }
 
 .topic img {
@@ -115,55 +111,10 @@ h2 {
   color: #555; /* Darker text for descriptions */
 }
 
-/* Accordion Styling */
-.accordion {
-  margin: 20px 0;
-}
-
-.accordion-item {
-  border: 1px solid #ECECEC;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.accordion-header {
-  background-color: #ECECEC;
-  padding: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-}
-
-.accordion-header .arrow {
-  transition: transform 0.3s ease;
-}
-
-.accordion-header .arrow.open {
-  transform: rotate(180deg);
-}
-
-.accordion-content {
-  display: none;
-  padding: 15px;
-  background-color: #fff;
-}
-
-.resources,
-.links {
-  margin-top: 20px;
-}
-
-.resources a,
-.links ul li a {
-  color: #7353BA;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.resources a:hover,
-.links ul li a:hover {
-  color: #fa7343;
+/* Hover Effect */
+.topic:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
 /* Subscribe Section */
