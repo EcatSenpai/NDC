@@ -124,6 +124,63 @@ h2 {
 }
 
 
+/* Resource Cards Section */
+.resource-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+}
+
+/* Individual Card Styles */
+.card {
+  background: linear-gradient(135deg, #29ABE2, #7353BA); /* Gradient background */
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px); /* Allow flexible sizing for four cards */
+  max-width: calc(25% - 20px); /* Ensure maximum width is 25% */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px; /* Ensure uniform card height */
+}
+
+.card img {
+  max-width: 100%; /* Ensure images are responsive */
+  max-height: 150px; /* Set a maximum height for images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop the image to fit */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: white; /* Text color inside the gradient */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ECECEC;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  background: #FA7343; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+  background: #FF6B4D; /* Button hover color */
+}
+
+
 .topic:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
