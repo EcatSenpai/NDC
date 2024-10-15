@@ -78,10 +78,9 @@ h2 {
 
 /* Cards Section */
 .topic-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 20px; /* Add space between the cards */
   margin-top: 20px;
 }
 
@@ -92,7 +91,6 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  flex: 1 1 calc(25% - 20px); /* 4 cards in a row, adjust with spacing */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 400px;
@@ -106,9 +104,8 @@ h2 {
 /* Image Sizing Fix */
 .topic img {
   max-width: 100%; /* Ensure images are responsive */
-  max-height: 150px; /* Limit height to prevent oversized images */
-  width: auto;
-  object-fit: contain; /* Ensure images maintain their aspect ratio */
+  max-height: 120px; /* Limit height to prevent oversized images */
+  object-fit: contain; /* Maintain aspect ratio without distortion */
   margin-bottom: 15px;
 }
 
@@ -139,18 +136,13 @@ footer small {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .topic {
-    flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+  .topic-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
   }
 }
 
 @media (max-width: 768px) {
   .topic-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .topic {
-    flex: 1 1 90%; /* Full width on small screens */
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
   }
 }
