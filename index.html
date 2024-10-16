@@ -3,35 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Professional Education Website</title>
+    <title>Educational Platform - Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* General body and container settings */
         body {
-            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             background-color: #FFFFFF;
-            color: #333; /* Dark text color for readability */
-        }
-
-        h1, h2, h3 {
-            font-family: 'Roboto', sans-serif; /* Ensure headings use Roboto */
-            font-weight: 700; /* Bold headings */
-        }
-
-        p, a {
-            font-family: 'Roboto', sans-serif; /* Apply Roboto for text and links */
-            font-weight: 400; /* Regular weight */
             color: #333;
         }
 
-        /* Example for buttons */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        p, a {
+            font-weight: 400;
+            color: #333;
+        }
+
         button, .btn {
-            font-family: 'Roboto', sans-serif; /* Apply Roboto for buttons */
-            font-weight: 500; /* Medium weight */
+            font-weight: 500;
             cursor: pointer;
         }
 
@@ -44,8 +39,8 @@
         .container-fluid {
             width: 100%;
             padding: 10px 20px;
-            background-color: #FFFFFF; /* Clean white navigation bar */
-            border-bottom: 1px solid #ECECEC; /* Soft Gray border for subtle separation */
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #ECECEC;
         }
 
         /* Navigation */
@@ -56,38 +51,31 @@
         }
 
         nav strong {
-            font-weight: bold;
             font-size: 1.5rem;
-            color: #FA7343; /* Swift Orange for brand recognition */
+            color: #FA7343;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
             display: flex;
             gap: 15px;
-        }
-
-        nav ul li {
-            display: inline;
         }
 
         nav ul li a {
             text-decoration: none;
             font-weight: 500;
-            color: #333; /* Dark text */
-            transition: color 0.3s ease, transform 0.3s ease; /* Add transition for scaling */
+            color: #333;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: #29ABE2; /* Teal/Blue on hover for links */
-            transform: scale(1.05); /* Slightly increase size on hover */
+            color: #29ABE2;
+            transform: scale(1.05);
         }
 
         /* Header */
         header {
-            background-color: #FA7343; /* Swift Orange for header background */
+            background-color: #FA7343;
             color: white;
             padding: 50px 0;
             text-align: center;
@@ -95,7 +83,6 @@
 
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 15px;
         }
 
         header p {
@@ -109,7 +96,7 @@
             text-align: center;
             margin-top: 20px;
             font-size: 2rem;
-            color: #FA7343; /* Swift Orange for headings */
+            color: #FA7343;
         }
 
         .topic-list {
@@ -125,7 +112,7 @@
             width: 250px;
             background-color: #FFFFFF;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -141,98 +128,44 @@
         .topic h3 {
             font-size: 1.3rem;
             margin-top: 10px;
-            color: #FA7343; /* Swift Orange for topic titles */
+            color: #FA7343;
         }
 
         .topic p {
             font-size: 1rem;
-            color: #666; /* Soft Gray for descriptions */
+            color: #666;
         }
 
-        /* Hover effect for topics */
         .topic:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-        }
-
-        /* Subscribe Section */
-        .subscribe-form {
-            text-align: center;
-            background-color: #ECECEC; /* Soft Gray background */
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .subscribe-form input[type="text"],
-        .subscribe-form input[type="email"] {
-            padding: 10px;
-            border: 1px solid #ECECEC;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        .subscribe-form button {
-            padding: 10px 15px;
-            background-color: #29ABE2; /* Teal/Blue for buttons */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .subscribe-form button:hover {
-            background-color: #7353BA; /* Purple on hover */
-            transform: scale(1.05); /* Slightly increase size on hover */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         /* Footer */
         footer {
-            background-color: #FA7343; /* Swift Orange footer */
+            background-color: #FA7343;
             color: white;
             padding: 20px;
             text-align: center;
             font-size: 0.9rem;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
 
         footer a {
             color: white;
             text-decoration: none;
-            transition: color 0.3s ease; /* Transition for footer links */
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
+            color: #29ABE2;
             text-decoration: underline;
-            color: #29ABE2; /* Change color on hover */
         }
 
-        /* Responsive adjustment */
+        /* Responsive */
         @media (max-width: 768px) {
             .topic-list {
                 flex-direction: column;
                 align-items: center;
-            }
-
-            .topic {
-                width: 90%; /* Make it responsive on mobile */
-                max-width: 300px;
-            }
-
-            .topic img {
-                max-width: 100%;
-                max-height: 150px;
-            }
-
-            .subscribe-form input[type="text"],
-            .subscribe-form input[type="email"] {
-                margin-bottom: 10px; /* Add space below input fields */
-            }
-
-            .subscribe-form button {
-                width: 100%; /* Full width button on mobile */
             }
         }
     </style>
@@ -241,7 +174,7 @@
 
     <nav class="container-fluid">
         <ul>
-            <li><strong>Your Brand</strong></li>
+            <li><strong>Education Hub</strong></li>
         </ul>
         <ul>
             <li><a href="#">Home</a></li>
@@ -252,8 +185,8 @@
 
     <header>
         <div class="header-content">
-            <h1>Welcome to Your Educational Platform</h1>
-            <p>Empower your learning journey with industry-leading resources, guides, and tutorials.</p>
+            <h1>Welcome to Swift Education</h1>
+            <p>Learn Swift with our interactive tutorials and guides, designed to elevate your coding skills.</p>
         </div>
     </header>
 
@@ -261,39 +194,30 @@
         <h2>Main Topics</h2>
         <div class="topic-list">
             <div class="topic">
-                <img src="your-image-url-here" alt="Topic 1">
-                <h3>Topic 1</h3>
-                <p>Brief description of the topic.</p>
+                <img src="swiftui.png" alt="SwiftUI">
+                <h3>SwiftUI Tutorials</h3>
+                <p>Learn to build beautiful UIs using SwiftUI with easy-to-follow tutorials.</p>
             </div>
             <div class="topic">
-                <img src="your-image-url-here" alt="Topic 2">
-                <h3>Topic 2</h3>
-                <p>Brief description of the topic.</p>
+                <img src="uikit.png" alt="UIKit">
+                <h3>UIKit Tutorials</h3>
+                <p>Dive into UIKit to create powerful iOS apps using Apple's classic framework.</p>
             </div>
             <div class="topic">
-                <img src="your-image-url-here" alt="Topic 3">
-                <h3>Topic 3</h3>
-                <p>Brief description of the topic.</p>
+                <img src="playgrounds.png" alt="Playgrounds">
+                <h3>Playgrounds & Fundamentals</h3>
+                <p>Get hands-on with Swift Playgrounds and grasp fundamental coding concepts.</p>
+            </div>
+            <div class="topic">
+                <img src="extras.png" alt="Extras">
+                <h3>Extras</h3>
+                <p>Explore additional resources, challenges, and projects to enhance your skills.</p>
             </div>
         </div>
-
-        <section aria-label="Subscribe example">
-            <div class="container subscribe-form">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to our newsletter to get the latest updates and resources directly to your inbox.</p>
-                <form>
-                    <input type="text" name="firstname" placeholder="First Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <small>
-            <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
-        </small>
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
     </footer>
 
 </body>
