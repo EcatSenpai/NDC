@@ -7,8 +7,6 @@
   <title>Extras (Bonus Content)</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
   <!-- jQuery for Accordion functionality -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
@@ -54,10 +52,6 @@
           padding: 0;
           display: flex;
           gap: 15px;
-      }
-
-      .nav-right ul li {
-          display: inline;
       }
 
       .nav-right ul li a {
@@ -145,7 +139,6 @@
           background-color: #7353BA;
       }
 
-      /* Hover effect for resource cards */
       .card:hover {
           transform: translateY(-5px);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -223,7 +216,7 @@
 <header>
     <nav class="container-fluid">
         <div class="nav-left">
-            <strong>Your Swift Hub</strong>
+            <strong>NoahDoesCoding</strong>
         </div>
         <div class="nav-right">
             <ul>
@@ -243,96 +236,15 @@
     </div>
 </header>
 
-<!-- New Links Section -->
 <main class="container">
-    <section id="resources">
-        <h2>Essential Resources for Learning Swift</h2>
-        <div class="resource-cards">
-            <div class="card">
-                <img src="assets/images/xcode.png" alt="Xcode" />
-                <h3>Xcode Download</h3>
-                <p>Download the latest version of Xcode and start coding in Swift today.</p>
-                <a href="https://developer.apple.com/xcode/" target="_blank" class="btn">Download Xcode</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/everyone_can_code.png" alt="Everyone Can Code" />
-                <h3>Everyone Can Code</h3>
-                <p>Apple's curriculum designed to help everyone learn to code.</p>
-                <a href="https://books.apple.com/ca/book/everyone-can-code-puzzles/id1481279769" target="_blank" class="btn">Explore Books</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/develop_in_swift.png" alt="Develop in Swift" />
-                <h3>Develop in Swift</h3>
-                <p>Advanced curriculum for developing apps with Swift.</p>
-                <a href="https://books.apple.com/ca/book/develop-in-swift-explorations/id6468968126" target="_blank" class="btn">Explore Books</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/playgrounds.png" alt="Swift Playgrounds" />
-                <h3>Swift Playgrounds</h3>
-                <p>Interactive way to learn Swift coding through fun challenges.</p>
-                <a href="https://www.apple.com/swift/playgrounds/" target="_blank" class="btn">Download Playgrounds</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/documentation.png" alt="Swift Documentation" />
-                <h3>Swift Documentation</h3>
-                <p>Check out the official Swift documentation.</p>
-                <a href="https://www.swift.org/documentation/" target="_blank" class="btn">Explore Documentation</a>
-            </div>
-        </div>
-    </section>
+    <!-- Content here (as per your existing setup) -->
+</main>
 
-    <!-- Accordion for Bonus Content -->
-    <section id="lessons">
-      <h2>Explore Bonus Content</h2>
-      <div class="accordion">
-
-        <!-- Lesson 1: Debugging in Xcode -->
-        <div class="accordion-item">
-          <h3 class="accordion-header">Debugging in Xcode <span class="arrow">&#x25BC;</span></h3>
-          <div class="accordion-content">
-            <p>Learn how to use breakpoints and debugging tools in Xcode. Example: Fix common bugs in an existing app.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
-            <div class="resources">
-              <h4>Project Resource</h4>
-              <a href="assets/projects/debugging-in-xcode.zip">Download Debugging Project</a>
-            </div>
-            <div class="links">
-              <h4>Links</h4>
-              <ul>
-                <li><a href="https://developer.apple.com/documentation/xcode/debugging-tools" target="_blank">Xcode Debugging Documentation</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Lesson 2: Building an ARKit App -->
-        <div class="accordion-item">
-          <h3 class="accordion-header">Building an ARKit App <span class="arrow">&#x25BC;</span></h3>
-          <div class="accordion-content">
-            <p>Introduction to ARKit and basic AR app creation. Example: Build a simple AR drawing app.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
-            <div class="resources">
-              <h4>Project Resource</h4>
-              <a href="assets/projects/arkit-drawing-app.zip">Download ARKit Project</a>
-            </div>
-            <div class="links">
-              <h4>Links</h4>
-              <ul>
-                <li><a href="https://developer.apple.com/documentation/arkit" target="_blank">ARKit Documentation</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="container">
+<footer class="container">
     <small>Thanks for learning with us! More bonus content coming soon.</small>
-  </footer>
+</footer>
 
-  <script>
+<script>
     // Accordion functionality
     $(document).ready(function(){
       $(".accordion-header").click(function(){
@@ -340,6 +252,6 @@
         $(this).find(".arrow").toggleClass("open");
       });
     });
-  </script>
+</script>
 </body>
 </html>
